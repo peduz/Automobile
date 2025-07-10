@@ -3,27 +3,27 @@ public class Auto {
     /*
      * CARATTERISTICHE
      */
-    String colore;
+    private String colore;
 
-    public String marca;
+    private String marca;
 
-    public int annoImmatricolazione;
+    private int annoImmatricolazione;
 
-    public String modello;
+    private String modello;
 
-    public String alimentazione;
+    private String alimentazione;
 
-    public String targa;
+    private String targa;
 
-    public double kmPercorsi;
+    private double kmPercorsi;
 
-    public int proprietariPrecedenti;
+    private int proprietariPrecedenti;
 
-    public int numeroPosti;
+    private int numeroPosti;
 
-    public int numeroPorte;
+    private int numeroPorte;
 
-    public double cilindrata;
+    private double cilindrata;
 
     // public Auto() {
     //     /*
@@ -89,6 +89,77 @@ public class Auto {
             risultato += "\n " + i + " volte";
         }
         return risultato;
+    }
+
+
+    public String getColore() {
+        return colore;
+    }
+
+
+    public String getMarca() {
+        return marca;
+    }
+
+
+    public int getAnnoImmatricolazione() {
+        return annoImmatricolazione;
+    }
+
+
+    public String getModello() {
+        return modello;
+    }
+
+
+    public String getAlimentazione() {
+        return alimentazione;
+    }
+
+
+    public String getTarga() {
+        return targa;
+    }
+
+
+    public double getKmPercorsi() {
+        return kmPercorsi;
+    }
+
+
+    public int getProprietariPrecedenti() {
+        return proprietariPrecedenti;
+    }
+
+
+    public int getNumeroPosti() {
+        return numeroPosti;
+    }
+
+
+    public int getNumeroPorte() {
+        return numeroPorte;
+    }
+
+
+    public double getCilindrata() {
+        return cilindrata;
+    }
+
+    public void setAlimentazione(String alimentazione) {
+        this.alimentazione = alimentazione;
+    }
+
+    public void setCilindrata(double cilindrata) {
+        this.cilindrata = cilindrata;
+    }
+
+    public void setNumeroPorte(int numeroPorte) {
+        this.numeroPorte = numeroPorte;
+    }
+    
+    public void setNumeroPosti(int numeroPosti) {
+        this.numeroPosti = numeroPosti;
     }
 
 }

@@ -13,22 +13,22 @@ public class App {
         System.out.println(new String());
 
         Auto auto1 = new Auto(null);
-        auto1.alimentazione = "Benzina";
-        System.out.println(auto1.colore);
+        auto1.setAlimentazione("Benzina");
+        System.out.println(auto1.getColore());
 
         Auto auto2 = new Auto("");
-        auto2.alimentazione = "Diesel";
-        System.out.println("Colore auto 2: " + auto2.colore);
+        auto2.setAlimentazione("Diesel");
+        System.out.println("Colore auto 2: " + auto2.getColore());
         // auto2.colore = "blue";
         auto2.cambiaColore("blue");
-        System.out.println("Colore auto 2: " + auto2.colore);
-        System.out.println("Colore auto 1: " + auto1.colore);
+        System.out.println("Colore auto 2: " + auto2.getColore());
+        System.out.println("Colore auto 1: " + auto1.getColore());
 
 
         Auto auto3 = new Auto("FG651AE");
-        auto3.cilindrata = 1600;
-        auto3.numeroPosti = 5;
-        auto3.numeroPorte = 5;
+        auto3.setCilindrata(1600);
+        auto3.setNumeroPosti(5);
+        auto3.setNumeroPorte( 5);
         // auto3.targa = "FG651AE";
         System.out.println(auto3.saluta("Giuseppe"));
         auto3.descriviAuto();
